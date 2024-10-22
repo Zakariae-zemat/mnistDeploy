@@ -63,5 +63,5 @@ iface = gr.Interface(fn=predict_image, inputs="image", outputs="text", title="MN
 
 
 if __name__ == "__main__":
-    iface.launch(server_name="localhost", server_port=8080, share=True)
+    iface.launch(server_name="0.0.0.0", server_port=8080, share=True)
 
