@@ -21,7 +21,7 @@ class Net(torch.nn.Module):
 # Device configuration
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = Net().to(device)
-model.load_state_dict(torch.load('fastap/mnist_ann-model.pth'))
+model.load_state_dict(torch.load('mnist_ann-model.pth'))
 
 model.eval()
 
